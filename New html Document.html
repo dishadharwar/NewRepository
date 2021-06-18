@@ -5,7 +5,7 @@
 function validateForm() {
   var x = document.forms["myForm"]["fname"].value;
   if (x == "") {
-    alert("Name must be filled out");
+    alert("Please enter the name");
     return false;
   }
 } 
@@ -14,7 +14,8 @@ function validateForm() {
 <body>
 
 <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
-  Name: <input type="text" name="fname">
+  FirstName: <input type="text" name="fname">
+   LastName: <input type="text" name="lname">
   <input type="submit" value="Submit">
 </form>
 
